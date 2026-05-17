@@ -12,7 +12,8 @@ const numero = prompt("Scegli un numero da 1 a 5");
 function genRandomNumbers(randomNumber) {
     for (let i = 0; i < 5; i++) {
         const randomNumber = Math.floor(Math.random());
+        result.push(randomNumber);
         console.log(randomNumber);
     }
     return randomNumber;
-}
+}  
