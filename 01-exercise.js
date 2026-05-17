@@ -20,7 +20,6 @@ function palindroma(parola) {
     //Rimuove gli spazi e converte tutto in minuscolo
     //Il regex /\s+/g trova tutti gli spazi e li sostituisce con stringhe vuote
     let parolaPulita = parola.toLowerCase().replace(/\s+/g, '');
-
     //Inverto la parola
     const parolaInvertita = parolaPulita.split("").reverse().join("");
     //Confronto la parola originale con quella invertita e se sono uguali, la parola è palindroma
