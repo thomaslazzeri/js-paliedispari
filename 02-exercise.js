@@ -8,3 +8,11 @@
 //L'utente sceglie pari o dispari
 const utente = prompt("scegli pari o dispari");
 const numero = prompt("Scegli un numero da 1 a 5");
+
+function genRandomNumbers(randomNumber) {
+    for (let i = 0; i < 5; i++) {
+        const randomNumber = Math.floor(Math.random());
+        console.log(randomNumber);
+    }
+    return randomNumber;
+}
