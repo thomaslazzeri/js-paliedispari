@@ -9,4 +9,20 @@
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 //Dichiariamo chi ha vinto.
 
-let parola = (prompt("Inserisci una parola"));
+//L'utente inserisce una parola
+const utenteParola = prompt("Inserisci una parola");
+//Creiamo una funzione per capire se la parola inserita è palindroma
+function palindroma(parola) {
+    //Inverto la parola
+    const parolaInvertita = parola.split("").reverse().join("");
+    //Confronto la parola originale con quella invertita e se sono uguali, la parola è palindroma
+    if (parola === parolaInvertita) {
+        return "La parola è palindroma";
+    }
+    //Se non sono uguali, la parola non è palindroma
+    else {
+        return "La parola non è palindroma";
+    }
+}
+//Verifico su browser in console
+console.log(palindroma(utenteParola));
