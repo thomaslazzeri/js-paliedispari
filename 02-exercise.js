@@ -16,3 +16,4 @@ function genRandomNumbers() {
 const computer = genRandomNumbers();
 console.log(computer);
 
+randomNumber + 
