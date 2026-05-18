@@ -16,4 +16,5 @@ function genRandomNumbers() {
 const computer = genRandomNumbers();
 console.log(computer);
 
-randomNumber + 
+const somma = computer + parseInt(numero);
+console.log(somma); 
