@@ -34,6 +34,7 @@ for (let i = 0; i < 1; i++) {
     }
 }
 //Dichiariamo chi ha vinto
+// Se la somma è pari e l'utente ha scelto "pari", oppure se la somma è dispari e l'utente ha scelto "dispari", allora l'utente vince. Altrimenti, perde.
 if ((somma % 2 === 0 && utente === "pari") || (somma % 2 !== 0 && utente === "dispari")) {
     console.log("Hai vinto!");
 }
