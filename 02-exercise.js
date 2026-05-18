@@ -24,14 +24,12 @@ console.log(computer);
 const somma = computer + parseInt(numero);
 console.log(somma);
 //Stabiliamo se la somma dei due numeri è pari oppure dispari
-function pariDispari(somma) {
-    // Controlla se la somma è pari o dispari usando l'operatore modulo (%)
+for (let i = 0; i < 1; i++) {
+    // Se la somma è divisibile per 2, allora è pari, altrimenti è dispari
     if (somma % 2 === 0) {
         console.log("La somma è pari");
     }
     else {
-        console.log("la somma è dispari");
+        console.log("La somma è dispari");
     }
 }
-//Chiama la funzione per verificare se la somma è pari o dispari
-pariDispari(somma);
