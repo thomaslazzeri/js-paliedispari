@@ -33,3 +33,12 @@ for (let i = 0; i < 1; i++) {
         console.log("La somma è dispari");
     }
 }
+//Dichiariamo chi ha vinto
+// Se la somma è pari e l'utente ha scelto "pari", allora l'utente vince
+if (somma % 2 === 0 && utente.toLocaleLowerCase() === "pari") {
+    console.log("Hai vinto!");
+}
+// Se la somma è dispari e l'utente ha scelto "dispari", allora l'utente vince
+else if (somma % 2 !== 0 && utente.toLowerCase() === "pari") {
+    console.log("Hai perso!");
+}
