@@ -34,11 +34,9 @@ for (let i = 0; i < 1; i++) {
     }
 }
 //Dichiariamo chi ha vinto
-// Se la somma è pari e l'utente ha scelto "pari", allora l'utente vince
-if (somma % 2 === 0 && utente.toLocaleLowerCase() === "pari") {
+if ((somma % 2 === 0 && utente === "pari") || (somma % 2 !== 0 && utente === "dispari")) {
     console.log("Hai vinto!");
 }
-// Se la somma è dispari e l'utente ha scelto "dispari", allora l'utente vince
-else if (somma % 2 !== 0 && utente.toLowerCase() === "pari") {
+else {
     console.log("Hai perso!");
 }
