@@ -16,13 +16,11 @@ function palindroma(parola) {
     //Inverto la parola
     const parolaInvertita = parolaPulita.split("").reverse().join("");
     //Confronto la parola originale con quella invertita e se sono uguali, la parola è palindroma
-    if (parolaPulita === parolaInvertita) {
-        return "La parola è palindroma";
-    }
-    //Se non sono uguali, la parola non è palindroma
-    else {
-        return "La parola non è palindroma";
-    }
+    return (parolaPulita === parolaInvertita);
 }
 //Verifico su browser in console
-console.log(palindroma(utenteParola));
+if (palindroma(utenteParola)) {
+    console.log("La parola è palindroma");
+} else {
+    console.log("La parola non è palindroma");
+}
