@@ -24,15 +24,15 @@ console.log(computer);
 const somma = computer + parseInt(numero);
 console.log(somma);
 //Stabiliamo se la somma dei due numeri è pari oppure dispari
-for (let i = 0; i < 1; i++) {
-    // Se la somma è divisibile per 2, allora è pari, altrimenti è dispari
-    if (somma % 2 === 0) {
-        console.log("La somma è pari");
-    }
-    else {
-        console.log("La somma è dispari");
-    }
+
+// Se la somma è divisibile per 2, allora è pari, altrimenti è dispari
+if (somma % 2 === 0) {
+    console.log("La somma è pari");
 }
+else {
+    console.log("La somma è dispari");
+}
+
 //Dichiariamo chi ha vinto
 // Se la somma è pari e l'utente ha scelto "pari", oppure se la somma è dispari e l'utente ha scelto "dispari", allora l'utente vince. Altrimenti, perde.
 if ((somma % 2 === 0 && utente === "pari") || (somma % 2 !== 0 && utente === "dispari")) {
